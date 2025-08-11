@@ -1,0 +1,52 @@
+# Ignore bundler config.
+/.bundle
+
+# Ignore all environment files (except templates).
+/.env*
+!/.env*.erb
+
+# Ignore all logfiles and tempfiles.
+/log/*
+/tmp/*
+!/log/.keep
+!/tmp/.keep
+
+# Ignore pidfiles, but keep the directory.
+/tmp/pids/*
+!/tmp/pids/
+!/tmp/pids/.keep
+
+# Ignore storage (uploaded files in development and any SQLite databases).
+/storage/*
+!/storage/.keep
+/tmp/storage/*
+!/tmp/storage/
+!/tmp/storage/.keep
+
+# Ignore SQLite database files
+*.sqlite3
+*.sqlite3-*
+
+/public/assets
+
+# Ignore master key and credentials for decrypting secrets.
+/config/master.key
+/config/credentials/*.key
+/config/credentials.yml.enc
+
+# Ignore assets builds and node_modules.
+/node_modules/
+/app/assets/builds/*
+!/app/assets/builds/.keep
+
+# Ignore development files
+/.devcontainer
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
